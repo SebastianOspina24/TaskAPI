@@ -12,7 +12,7 @@ import edu.eci.ieti.entity.Task;
 import edu.eci.ieti.service.TaskService;
 
 @RestController
-@RequestMapping("/api/v2/customers")
+@RequestMapping("/api/v2/tasks")
 public class TaskController {
 
     @Autowired
