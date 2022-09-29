@@ -4,13 +4,13 @@ import java.util.List;
 import edu.eci.ieti.entity.Task;
 
 public interface TaskService {
-    Task create(Task user);
+    Task create(Task task);
 
     Task findById(String id);
 
     List<Task> getAll();
 
-    void deleteById(String id);
+    boolean deleteById(String id);
 
-    Task update(Task user, String userId);
+    Task update(Task task, String taskid);
 }

@@ -12,6 +12,7 @@ import edu.eci.ieti.entity.Task;
 import edu.eci.ieti.service.TaskService;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("/api/v2/tasks")
 public class TaskController {
 

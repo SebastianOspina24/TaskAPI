@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import edu.eci.ieti.entity.Task;
 import edu.eci.ieti.service.TaskService;
 
-@Service
 public class TaskServiceHashMap implements TaskService {
 
     private HashMap<String, Task> persistence = new HashMap<>();
@@ -32,8 +31,9 @@ public class TaskServiceHashMap implements TaskService {
     }
 
     @Override
-    public void deleteById(String id) {
+    public boolean deleteById(String id) {
         persistence.remove(id);
+        return true;
     }
 
     @Override
